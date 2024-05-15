@@ -1,8 +1,8 @@
-const supportedTopics = ['HTML', 'CSS', 'Git', 'JavaScript']
+const topics = ['HTML', 'CSS', 'Git', 'JavaScript'];
+const randomTopic = topics[Math.floor(Math.random() * topics.length)];
 
-const topic = 'HTML';
+console.log('Here are the topics we learned through Prework:')
+topics.forEach((topic) => console.log(topic));
 
-if (supportedTopics.includes(topic)) console.log(`Let's study ${topic}!`);
-else console.log('Please try again!');
-
-supportedTopics.forEach((topic) => console.log(topic));
+console.log('Which topic should we study first?');
+console.log(`Let's study ${randomTopic}`);
